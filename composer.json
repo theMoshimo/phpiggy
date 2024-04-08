@@ -10,8 +10,11 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Framework\\" : "src/Framework",
+            "Framework\\": "src/Framework",
             "App\\": "src/App"
-        }
+        },
+        "files": [
+            "src/App/Config/Routes.php"
+        ]
     }
 }
