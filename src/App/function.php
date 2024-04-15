@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// This script contains utility functions
 function dd(mixed $value)
 {
     echo "<pre>";
@@ -13,4 +14,11 @@ function dd(mixed $value)
 function e(mixed $value)
 {
     return htmlspecialchars((string)$value);
+}
+
+function redirectTo(string $path)
+{
+    header("Location: {$path}");
+    http_response_code(302);
+    exit;
 }

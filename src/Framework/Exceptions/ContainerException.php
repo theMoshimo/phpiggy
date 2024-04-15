@@ -1,6 +1,6 @@
 <?php
 
-namespace FrameWork\Exceptions;
+namespace Framework\Exceptions;
 
 use Exception;
 
