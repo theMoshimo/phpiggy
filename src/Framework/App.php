@@ -37,7 +37,6 @@ class App
         // Retrieve path and method form the server request
         $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $method = $_SERVER['REQUEST_METHOD'];
-
         //Dispatch the request ot the router for handlning
         $this->router->dispatch($path, $method, $this->container);
     }

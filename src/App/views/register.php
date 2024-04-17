@@ -7,7 +7,7 @@
             <input value="<?php echo e($oldFormData['email'] ?? ''); ?>" name="email" type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="john@example.com" />
             <?php if (array_key_exists('email', $errors)) : ?>
                 <div class="bg-gray-100 mt-2 p-2 text-red-500">
-                    <?php echo $errors['email']; ?>
+                    <?php echo $errors['email'][0]; ?>
                 </div>
             <?php endif; ?>
         </label>
@@ -91,5 +91,5 @@
             Submit
         </button>
     </form>
-</section>`
+</section>
 <?php include $this->resolve("/partials/_footer.php"); ?>
